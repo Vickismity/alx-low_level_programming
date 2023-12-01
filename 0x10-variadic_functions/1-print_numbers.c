@@ -6,6 +6,7 @@
  * @separator: string to be printed between numbers
  * @n: number of arguments
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int a;
@@ -22,6 +23,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%d\n", va_arg(arg, int));
 	}
-		printf("\n");
+		putchar('\n');
 		va_end(arg);
 }
