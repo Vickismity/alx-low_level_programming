@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	int cents;
+	int coins = 0;
 
 	if (argc != 2)
 	{
@@ -18,8 +19,9 @@ int main(int argc, char *argv[])
 	}
 	cents = atoi(argv[1]);
 	if (cents < 0)
-		printf("0\n");
-	while (cents > 0)
+	printf("0\n");
+
+	while (cents >= 1)
 	{
 		if (cents >= 25)
 			cents = cents - 25;
